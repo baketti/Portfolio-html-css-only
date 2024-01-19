@@ -1,0 +1,23 @@
+@import "config";
+
+.maps {
+    width: 100%;
+    align-self: center;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.9);
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: $standard-gap;
+  }
+
+  .contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px;
+  }

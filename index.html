@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Responsive Design</title>
+    <link rel='stylesheet' href='./styles/css/style.css'/>
+    <!-- <link rel='stylesheet' href='./styles/css/style.css'/> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50261d5158.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class='page'>
+        <nav class="navbar">
+            <div class='symbol'>
+                <div><strong>&lt; / ></strong></div>
+            </div>
+            <div class="links-container">
+                <ul class='links'>
+                    <li class='dropdown'>
+                        <div class="burger-menu">
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                        </div>
+                        <ul class='features-menu'>          
+                            <li><a href='#about-me'>About me</a></li>
+                            <li><a href='#portfolio'>Portfolio</a></li>
+                            <li><a href='#contact-me'>Contact me</a></li>
+                        </ul>                                
+                    </li>
+                    <li class="main-links"><a href='#about-me'>About me</a></li>    
+                    <li class="main-links"><a href='#portfolio'>Portfolio</a></li>
+                    <li class="main-links"><a href='#contact-me'>Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header-container">
+            <div class="header">
+                <h1>Hi, I'm Emanuele Giovanni Bachetti</h1>
+                <h2 style="margin-top: 20px;">Full Stack Developer</h2>
+            </div>
+            <div class='my-photo'>
+                <picture>
+                  <img src='images/me.jpeg' alt='Description of the image' class="my-image" />
+                </picture>
+            </div>
+        </header>
+        <section class="icons" id="icons">
+            <div class="icons-container">
+                <div class="icon">      
+                    <a href="https://www.linkedin.com/" title="linkedin" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>                    </a>
+                </div>
+                <div class="icon" id="github-icon">
+                    <a href="https://github.com/baketti" title="github" style="color: black;" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about-me">
+            <h3>About me</h3>
+            <p id="presentation"><em>"Hello, my name is Emanuele Giovanni, I am 26, and I am the third of five children.<br> I was born and raised in 
+                Ascoli Piceno, the city where I currently live. I have always been searching for my path,
+                and I found it in web development. I have always had a strong curiosity towards the technological 
+                field, but I had never thought of working in it. I encountered programming about a year ago, 
+                and since the first approaches, it was love at first sight. Today, it has become a real passion. 
+                My goal now is to become a professional in this field and realize the dream of doing the job I love. 
+                I really like the web field, but I also have a strong passion for future technologies: AI and 
+                blockchain.<br>In the last year, I have dedicated myself to learn the basics of programming and have worked 
+                part-time doing occasional activities such as waiter and gardener.
+                 I love sports and healthy food. I am a patient, stubborn, dynamic, and highly motivated person.
+                <br> I can`t wait to start!<br>
+                If you want, you can look at my resume <a id="cv-link" href="./curriculum/index.html" target="_blank">here</a>."</em>
+            </p>
+        </section>
+        <section class="techs-container">
+            <h3>My favourite technologies</h3>
+            <div class="techs">
+                <ul class="techs-list"><!-- I've inserted background in line cause it wasn't work -->
+                  <li><img title="image" style="background-color: transparent;" class="tech" src="./images/html.png"></img></li>
+                  <li><img title="image" id="css-logo" style="background-color: transparent;" class="tech" src="./images/csss.png"></img></li>
+                  <li><img title="image" id="sass-logo" style="background-color: transparent;" class="tech" src="./images/sass.png"></img></li>
+                  <li><img title="image" id="js-logo" style="background-color: transparent;" class="tech" src="./images/javascript.png"></img></li>
+                  <li><img title="image" id="ts-logo" style="background-color: transparent;" class="tech" src="./images/ts.png"></img></li>
+                  <li><img title="image" style="background-color: transparent;" class="tech" src="./images/react.png"></img></li>
+                  <li><img title="image" id="node-logo" style="background-color: transparent;" class="tech" src="./images/nod.png"></img></li>
+                  <li><img title="image" id="next-logo" style="background-color: transparent;" class="tech" src="./images/nextjs.png"></img></li>
+                  <li><img title="image"  style="background-color: transparent;" class="tech" src="./images/sql.png"></img></li>
+                  <li><img title="image" id="mongodb-logo" style="background-color: transparent;" class="tech" src="./images/Mongodb-PNG-Image-HD.png"></img></li>
+                  <li><img title="image" id="openai-logo" style="background-color: transparent;" class="tech" src="./images/openai.png"></img></li>
+                </ul>
+            </div>
+        </section>
+        <section id="portfolio"></section>
+        <section class="portfolio">
+            <h3>My portfolio</h3>
+            <ul class="projects">
+                <li><figure><figcaption>Tic Tac Toe</figcaption>
+                    <img class="project" id="tris" src="./images/TicTacToe.jpg" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>Connect 4</figcaption>
+                    <img class="project" src="./images/connect-4-multiplayer.webp" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>Mines weeper</figcaption>
+                    <img class="project" src="./images/campo.jpg" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>Weather App</figcaption>
+                    <img class="project" src="./images/weather-app.png" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>My Library App</figcaption>
+                    <img class="project" src="./images/library.jpg" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>To do list App</figcaption>
+                    <img class="project" src="./images/to-do.jpg" title="img" alt="Project image"/>
+                </figure></li>                
+                <li><figure><figcaption>PDF Chatbot</figcaption>
+                    <img class="project" src="./images/chatbot.png" title="img" alt="Project image"/>
+                </figure></li>                
+            </ul>
+        </section>
+        <section class="contact" id="contact-me">
+            <h3>Contact me</h3>
+            <div class="contact-container">
+                <div class='section form'>
+                    <form id="survey-form">
+                        <label class="dati" id="name-label"><input id="name" type="text" placeholder="Enter your name" required></label>
+                        <label class="dati" id="email-label"><input id="email" type="email" placeholder="Enter your email" required></label>
+                        <textarea placeholder="Enter your message here..." title="Message" rows="5"></textarea>
+                        <button type="submit" id="submit">Send</button>
+                    </form>
+                </div>
+                <div class='section maps'>
+                    <iframe title='Google Maps' width="100%" height="100%" frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/streetview?location=42.8599,13.5790&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="social-icons">
+                    <a title="link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a title="link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a title="link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a title="link" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-twitch"></i>
+                    </a>
+                  </div>
+                <div>
+                    Copyright 2024
+                </div>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>

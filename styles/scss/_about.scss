@@ -1,0 +1,19 @@
+@import "config";
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: $standard-gap;
+  }
+
+  #presentation {
+    font-weight: 100;
+    font-family: $font-presentation;
+    line-height: 1.3;
+    #cv-link {
+      color:blue;
+      cursor: pointer;
+    }
+  }

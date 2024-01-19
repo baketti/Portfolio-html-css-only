@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    height: 200px;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,52 @@
+@import "config";
+
+.techs-container {
+/*     display: flex;
+    flex-wrap: wrap; */
+    text-align: center;
+    padding: 20px;
+    
+  }
+  .techs-list {
+    margin-top: $standard-gap;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: max-content;
+    gap:2.5rem;
+    li{
+      width: 40px;
+      height: 40px;
+    }
+    .tech {
+      width: 40px;
+      height: 40px;
+      
+      margin-right: 10px; 
+    } 
+    #css-logo {
+      width: 30px;
+      height: 40px;
+    }
+    #node-logo {
+      width: 30px;
+      height: 35px;
+    }
+    #mongodb-logo {
+      width: 55px;
+      height: 50px;
+    }
+    #sass-logo,#js-logo,#ts-logo,#openai-logo {
+      width: 35px;
+      height: 35px;
+    }
+    #next-logo {
+      width: 55px;
+    }
+  }
+    
+  
