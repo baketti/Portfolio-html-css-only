@@ -3,9 +3,25 @@
   <head>
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <!-- Primary Meta Tags -->
     <title>Emanuele G.Bachetti</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel='stylesheet' href='./styles/css/style.css'/>
+    <meta name="title" content="Emanuele G.Bachetti" />
+    <meta name="description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://baketti.github.io/Portfolio-html-css-only/" />
+    <meta property="og:title" content="Emanuele G.Bachetti" />
+    <meta property="og:description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://baketti.github.io/Portfolio-html-css-only/" />
+    <meta property="twitter:title" content="Emanuele G.Bachetti" />
+    <meta property="twitter:description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel='stylesheet' href='../assets/css/style.css'/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;500&amp;display=swap" rel="stylesheet">
@@ -28,11 +44,13 @@
                         </div>
                         <ul class='features-menu'>          
                             <li><a href='#about-me'>About me</a></li>
+                            <li><a href='./curriculum/index.html'>My CV</a></li>
                             <li><a href='#portfolio'>Portfolio</a></li>
                             <li><a href='#contact-me'>Contact me</a></li>
                         </ul>                                
                     </li>
                     <li class="main-links"><a href='#about-me'>About me</a></li>    
+                    <li class="main-links"><a href="./curriculum/index.html">My CV</a></li>    
                     <li class="main-links"><a href='#portfolio'>Portfolio</a></li>
                     <li class="main-links"><a href='#contact-me'>Contact me</a></li>
                 </ul>
@@ -41,23 +59,23 @@
         <header class="header-container">
             <div class="header">
                 <h1>Hi, I'm Emanuele Giovanni Bachetti</h1>
-                <h2 style="margin-top: 20px;">Full Stack Developer</h2>
+                <h2>Full Stack Developer</h2>
             </div>
             <div class='my-photo'>
                 <picture>
-                  <img src='images/me.jpeg' alt='Description of the image' class="my-image" />
+                  <img src='../assets/images/me.jpeg' title='Emanuele Giovanni Bachetti`s photo' alt='Emauele Giovanni Bachetti`s photo image' class="my-image" />
                 </picture>
             </div>
         </header>
         <section class="icons" id="icons">
             <div class="icons-container">
                 <div class="icon">      
-                    <a href="https://www.linkedin.com/" title="linkedin" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>                    </a>
+                    <a href="https://www.linkedin.com/" id="linkedin" title="Linkedin" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin fa-2x"></i></a>
                 </div>
                 <div class="icon" id="github-icon">
-                    <a href="https://github.com/baketti" title="github" style="color: black;" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i></a>
+                    <a href="https://github.com/baketti" id="github" title="Github" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
         </section>
@@ -74,24 +92,24 @@
                 part-time doing occasional activities such as waiter and gardener.
                  I love sports and healthy food. I am a patient, stubborn, dynamic, and highly motivated person.
                 I can`t wait to start!<br>
-                If you want, you can look at my resume <a id="cv-link" href="./curriculum/index.html" target="_blank">here</a>."</em>
+                If you want, you can look at my resume <a id="cv-link" href="./curriculum/index.html">here</a>."</em>
             </p>
         </section>
         <section class="techs-container">
             <h3>My favourite technologies</h3>
             <div class="techs">
                 <ul class="techs-list"><!-- I've inserted background in line cause it wasn't work -->
-                  <li><img title="image" style="background-color: transparent;" class="tech" src="./images/html.png"></img></li>
-                  <li><img title="image" id="css-logo" style="background-color: transparent;" class="tech" src="./images/csss.png"></img></li>
-                  <li><img title="image" id="sass-logo" style="background-color: transparent;" class="tech" src="./images/sass.png"></img></li>
-                  <li><img title="image" id="js-logo" style="background-color: transparent;" class="tech" src="./images/javascript.png"></img></li>
-                  <li><img title="image" id="ts-logo" style="background-color: transparent;" class="tech" src="./images/ts.png"></img></li>
-                  <li><img title="image" style="background-color: transparent;" class="tech" src="./images/react.png"></img></li>
-                  <li><img title="image" id="node-logo" style="background-color: transparent;" class="tech" src="./images/nod.png"></img></li>
-                  <li><img title="image" id="next-logo" style="background-color: transparent;" class="tech" src="./images/nextjs.png"></img></li>
-                  <li><img title="image"  style="background-color: transparent;" class="tech" src="./images/sql.png"></img></li>
-                  <li><img title="image" id="mongodb-logo" style="background-color: transparent;" class="tech" src="./images/Mongodb-PNG-Image-HD.png"></img></li>
-                  <li><img title="image" id="openai-logo" style="background-color: transparent;" class="tech" src="./images/openai.png"></img></li>
+                  <li><img title="HTML5" alt="HTML5 logo image" class="tech" src="../assets/images/html.png"></img></li>
+                  <li><img title="CSS3" alt="CSS3 logo image" id="css-logo" class="tech" src="../assets/images/csss.png"></img></li>
+                  <li><img title="Sass" alt="Sass logo image" id="sass-logo" class="tech" src="../assets/images/sass.png"></img></li>
+                  <li><img title="Javascript" alt="Javascript logo image" id="js-logo" class="tech" src="../assets/images/javascript.png"></img></li>
+                  <li><img title="Typescript" alt="Typescript logo image" id="ts-logo" class="tech" src="../assets/images/ts.png"></img></li>
+                  <li><img title="React" alt="React logo image" class="tech" src="../assets/images/react.png"></img></li>
+                  <li><img title="Node.js" alt="Node.js logo image" id="node-logo" class="tech" src="../assets/images/nod.png"></img></li>
+                  <li><img title="Next.js" alt="Next.js logo image" id="next-logo" class="tech" src="../assets/images/nextjs.png"></img></li>
+                  <li><img title="SQL" alt="SQL logo image"  class="tech" src="../assets/images/sql.png"></img></li>
+                  <li><img title="Mongo DB" alt="Mongo DB logo image" id="mongodb-logo" class="tech" src="../assets/images/Mongodb-PNG-Image-HD.png"></img></li>
+                  <li><img title="OpenAi" alt="OpenAi logo image" id="openai-logo" class="tech" src="../assets/images/openai.png"></img></li>
                 </ul>
             </div>
         </section>
@@ -100,25 +118,25 @@
             <h3>My portfolio</h3>
             <ul class="projects">
                 <li><figure><figcaption>Tic Tac Toe</figcaption>
-                    <img class="project" id="tris" src="./images/TicTacToe.jpg" title="img" alt="Project image"/>
+                    <img class="project" id="tris" src="../assets/images/TicTacToe.jpg" title="Tic Tac Toe simple game" alt="Tic Tac Toe image"/>
                 </figure></li>                
                 <li><figure><figcaption>Connect 4</figcaption>
-                    <img class="project" src="./images/connect-4-multiplayer.webp" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/connect-4-multiplayer.webp" title="Connect 4 simple game" alt="Connect 4 image"/>
                 </figure></li>                
                 <li><figure><figcaption>Mines weeper</figcaption>
-                    <img class="project" src="./images/campo.jpg" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/campo.jpg" title="Mines Weeper simple game" alt="Mines Weeper image"/>
                 </figure></li>                
                 <li><figure><figcaption>Weather App</figcaption>
-                    <img class="project" src="./images/weather-app.png" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/weather-app.png" title="Simple weather app" alt="Weather app image"/>
                 </figure></li>                
                 <li><figure><figcaption>My Library App</figcaption>
-                    <img class="project" src="./images/library.jpg" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/library.jpg" title="Simple library website" alt="Library app image"/>
                 </figure></li>                
                 <li><figure><figcaption>To do list App</figcaption>
-                    <img class="project" src="./images/to-do.jpg" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/to-do.jpg" title="Simple to do list app" alt="To do list image"/>
                 </figure></li>                
                 <li><figure><figcaption>PDF Chatbot</figcaption>
-                    <img class="project" src="./images/chatbot.png" title="img" alt="Project image"/>
+                    <img class="project" src="../assets/images/chatbot.png" title="PDF simple chatbot" alt="PDF chatbot image"/>
                 </figure></li>                
             </ul>
         </section>
@@ -143,17 +161,17 @@
         <footer class="footer">
             <div class="container-footer">
                 <div class="social-icons">
-                    <a title="link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-facebook"></i>
+                    <a title="Facebook" id="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-facebook fa-2x"></i>
                     </a>
-                    <a title="link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-instagram"></i>
+                    <a title="Instagram" id="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-instagram fa-2x"></i>
                     </a>
-                    <a title="link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-twitter"></i>
+                    <a title="Twitter" id="twitter" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-x-twitter fa-2x"></i>
                     </a>
-                    <a title="link" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-twitch"></i>
+                    <a title="Twitch" id="twitch" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-twitch fa-2x"></i>
                     </a>
                   </div>
                 <div>

@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    color: black;
+    font-size: 12px;
+    background-color: rgb(218, 202, 202);
+  }
+  .curriculum{
+    margin-top: 80px;
+  }
+  .navbar {
+    width: 100%;
+    height: 60px;
+    margin-top: -80px;
+    position: fixed;
+    z-index: 999;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  }
+  .features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    padding: 0 30px 10px 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;   
+  }
+  .features-menu li:last-of-type {
+    border-bottom: none;
+  }
+  .navbar a {
+      color: white;
+      font-family: Bebas Neue;
+      text-decoration: none;
+  }
+    .dropdown {
+      padding: 10px;
+      position: relative;      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .burger-line {
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      margin: 3px 0;
+      border-radius: 4px;
+    }
+    .burger-menu {
+      z-index: 2;
+      position: relative;  
+      cursor: pointer;
+    } 
+    .features-menu {
+      display: none;
+      background:rgba(0,0,0,0.8);
+      width: 330px;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: white;
+      border-radius: 5px;
+      padding-top: 60px;
+      position: absolute;   
+      top: -25px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    }
+
+  .links {
+    margin-top: 15px;
+    list-style: none;
+  }
+
+  .links li:nth-child(2) {
+    display: none;
+  }
+
+  .main-links {
+    display: none;
+  }
+
+  .symbol {
+    display: none;
+  }
+
+  .container {       
+    margin: 20px 0 20px 0; 
+  }
+
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    background-color: white;
+  }
+
+  #page-two {
+    height: 1600px;
+  }
+
+  .section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+  }     
+
+
+  .labels {
+    min-width: 38.3%;
+    height: auto;
+    text-align:end;
+    border-right: 2px black solid;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .labels h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+  }
+
+  .labels h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+  }
+
+  .labels span {
+    padding: 5px 0 5px 0;
+  }
+  
+  .activities {
+    justify-content: flex-start;
+  }
+
+  .informations {
+    width: 66.6%;
+    min-width: 66.6%;
+    height: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   } 
+  .informations ul {
+    list-style-type: none;
+    padding: 5px 0 5px 0;
+   } 
+
+  .informations a {
+    color: blue;
+   }
+
+    .informations span {
+        text-align: end;
+    }
+
+  .main-labels{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .space-labels {
+    height:16px
+  }
+
+  .space-informations {
+        height:16px
+    }
+
+  .privacy{
+      max-width: 100%;
+      position: absolute;
+      text-align: justify;
+      padding: 50px;
+
+  }
+
+    .footer {
+        padding: 10px;
+        font-size: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .informations {
+        align-items: center;
+    }
+
+    .two {
+        padding-top: 360px;
+    }
+
+    .page-footer {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .container-footer {
+      padding-bottom: 10px;
+      font-size: 14px;
+      font-family: Bebas Neue;
+      letter-spacing: 1.5px;
+    }
+
+  /* Mobile Styles */
+
+  @media only screen and (max-width: 450px) {
+    body {
+      font-size: 7px;
+    }
+    .page {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    .dropdown:hover .features-menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #page-two {
+      height: 1285px;
+    } 
+    .informations {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /*Smaller Tablet Styles */
+
+  @media only screen and (min-width: 451px) and (max-width: 650px) {
+    body {
+      font-size: 8.5px;
+      padding: 20px 20px 0 20px;
+  }
+  .page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 7.5px;
+    overflow: hidden;
+  }
+  
+  .curriculum {
+    margin-top: 60px;
+ }
+
+  .navbar {
+    margin-top: -20px;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .dropdown:hover .features-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-menu{
+    font-size: 20px;
+  }
+  #page-two {
+    height: 1340px;
+  } 
+  .privacy {
+    max-width: 500px;
+  }
+
+}
+
+/*Bigger Tablet Styles */
+
+  @media only screen and (min-width: 651px) and (max-width: 1060px) {
+    body {
+      font-size: 10px;
+      padding: 20px 20px 0 20px;
+  }
+  .page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .curriculum {
+    margin-top: 60px;
+ }
+  .navbar {
+    margin-top: -20px;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .dropdown:hover .features-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-menu{
+    font-size: 20px;
+  }
+  #page-two {
+    height: 1475px;
+  } 
+  .privacy {
+    max-width: 700px;
+  }
+}
+
+  /* Desktop Styles */
+
+  @media only screen and (min-width: 1061px) {
+    body {
+        font-size: 12px;
+    }
+    .page {
+      width: 860px;
+      margin: 0 auto;
+    }
+
+    .dropdown {
+      display: none;
+    }
+
+    .navbar {
+      width: 100%;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+
+    .symbol {
+      font-size: 24px;
+      font-family: Bebas Neue;
+      display: flex;
+      width: max-content;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .symbol:hover{
+      cursor: pointer;
+      
+    }
+
+    .links-container{
+      width: 40%;
+      display: flex;
+      align-items: center;
+    }
+
+    .links li:nth-child(2) {
+      display: flex;
+      font-family: Bebas Neue;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      gap: 60px;
+    }
+      .main-links {
+        width: max-content;
+        padding: 0;
+        margin-bottom: 10px;
+        display: flex;
+      }
+      .main-links a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          letter-spacing: 1.5px;
+        }
+    .main-links, .symbol {  
+      transition: transform 0.5s ease; 
+    }
+
+    .symbol:hover, .main-links:hover{
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      transform: scale(1.09);
+    }
+
+    .privacy {
+      max-width: 700px;
+    }
+  }
+

@@ -24,8 +24,8 @@
   .page {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
     justify-content: center;
+    gap: $standard-gap;
   }
 
   h3 {
@@ -42,25 +42,32 @@
 
   .icons-container {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     height: 100px;
     gap: 10px;
+    #linkedin {
+      color: blue;
+    }
+    #github {
+      color: black;
+    }
   }
 
   /* Mobile Styles */
   @media only screen and (max-width: 400px) {
-    .page {
-      gap: 70px;
-    }
+    
     .icons-container {
       height: 150px;
+      display: flex;
+      align-items: flex-end;
     }
+    
     .contact {
       padding: 20px;
     }
   }
-  
+
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 1060px) {
 
@@ -72,6 +79,22 @@
       width: 100%;
       margin: 0 auto;
     }
+
+    .icons-container {
+      align-items: flex-end;
+    }
+
+    .my-photo {
+      width: 300px;
+      height: 300px;
+    }
+
+    .header-container{
+      .my-image {
+      width: 300px;
+      height: 300px;
+    }
+  }
 
     #presentation {
       font-size: 18px;
@@ -160,6 +183,39 @@
         order:1;
       }
     }
+    .footer {
+      height: 180px;
+      .social-icons {
+        gap: 20px;
+        padding: 10px
+      }
+    }
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 890px) {
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+      width: 100%;
+      gap: 30px;
+    }
+
+    .form,.maps {
+      width: 50% !important;
+    }
+    .form {
+      order:1 !important;
+    }
+    .maps {
+      order:2 !important;
+    }
+  
+    .contact-container {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   /* Desktop Styles */
@@ -198,32 +254,33 @@
 
       .links-container{
         width: max-content;
+        margin-right: 20px;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
       }
 
       .links {
         display: flex;
-        width: 450px;
-        gap: 70px;
-        margin-top: -40px;
-        margin-right: 20px;
+        width: 100%;
+        gap: 60px;
+
         .main-links {
-          text-align: start;
-          padding-top: -30px;
-          display: inline-block;
+          width: max-content;
+          padding: 0;
+          margin-bottom: 10px;
+          display: flex;
           transition: $transition-out-style;
           a {
             color: $navbar-text-color;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
           }
           
           &:hover{
             transform: $transform-style;
             transition: $transition-in-style;
-        }
+          }
         }
       }
     }
@@ -235,8 +292,8 @@
         width: 40%;
       }
       .my-image {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
       }
     }
 
@@ -246,6 +303,7 @@
       .icons-container {
         width: 100%;
         display: flex;
+        align-items: flex-end;
         gap: 25px;
       }
     }
@@ -266,13 +324,13 @@
       .techs {
         width: 920px;
         margin: 0 auto;
-        padding-top:40px;
+        padding-top:20px;
         justify-content: center;
         align-items: center;
         gap: 30px;
       }
       .techs-list {
-        margin-top: 40px;
+        margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
         gap: 90px;
@@ -314,6 +372,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-top: 20px;
       gap:30px;
       li {
         width: 300px;
@@ -350,6 +409,14 @@
         .maps {
           order:1;
         }
+      }
+    }
+
+    .footer {
+      height: 200px;
+      .social-icons {
+        gap: 20px;
+        padding: 10px
       }
     }
   }

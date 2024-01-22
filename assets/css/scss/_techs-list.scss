@@ -1,14 +1,10 @@
 @import "config";
 
 .techs-container {
-/*     display: flex;
-    flex-wrap: wrap; */
     text-align: center;
     padding: 20px;
-    
   }
   .techs-list {
-    margin-top: $standard-gap;
     padding: 10px;
     list-style: none;
     display: flex;
@@ -17,7 +13,7 @@
     justify-content: center; 
     width: 100%;
     height: max-content;
-    gap:2.5rem;
+    gap:20px;
     li{
       width: 40px;
       height: 40px;
@@ -25,7 +21,6 @@
     .tech {
       width: 40px;
       height: 40px;
-      
       margin-right: 10px; 
     } 
     #css-logo {
