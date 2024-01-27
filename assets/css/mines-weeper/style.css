@@ -130,6 +130,7 @@ h1 {
 .game-board {
 	position: relative;
  	border: 2px solid black;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
 }
 
 .grid {
