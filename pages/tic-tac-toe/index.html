@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Tic Tac Toe" />
+    <meta name="description" content="It is a simple tic-tac-toe game realized by Emanuele Giovanni Bachetti in HTML,CSS e JS- January 2024." />
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link  type="text/css" rel="stylesheet" href="../../assets/css/tic-tac-toe/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class='symbol'>
+            <div><strong>&lt; / ></strong></div>
+        </div>
+        <div class="links-container">
+            <ul class='links'>
+                <li class='dropdown'>
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <ul class='features-menu'>          
+                        <li><a href='../index.html#portfolio'>Back to home</a></li>
+                    </ul>                                
+                </li>
+                <li class="main-links"><a href='../index.html#portfolio'>Back to home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="turn-info"></div>
+        <div class="campo">
+            <!-- griglia di gioco -->
+            <div class="grid">
+                <div class="casella uno"></div>
+                <div class="casella due"></div>
+                <div class="casella tre"></div>
+                <div class="casella quattro"></div>
+                <div class="casella cinque"></div>
+                <div class="casella sei"></div>
+                <div class="casella sette"></div>
+                <div class="casella otto"></div>
+                <div class="casella nove"></div>
+            </div>
+            <!-- legenda simboli giocatori -->
+            <div class="legend hidden">
+                <div class="pl">
+                    <div class="pl1-name"></div>
+                    <div class="pl1-symbol">X</div>
+                </div>
+                <div class="pl">
+                    <div class="pl2-name"></div>
+                    <div class="pl2-symbol">O</div>
+                </div>
+            </div>
+        </div>
+        <!-- schermata di inizio -->
+        <div class="start-screen">
+            <div class="header">
+                <div class="header-container">
+                    <h1>WELCOME TO TIC TAC TOE</h1>
+                    <h3>Multiplayer</h3>
+                </div>
+            </div>
+            <form class="input-container" id="form">
+                <input type="text" placeholder="Player 1 name" class="input" id="player1">
+                <input type="text" placeholder="Player 2 name" class="input" id="player2">
+                <button class="btn-start start" type="submit">Start game</button>
+            </form>
+        </div>
+        <!-- schermata di fine -->
+        <div class="end hidden">
+            <h1 class="end-h1"></h1>
+            <button class="btn-start restart">Restart</button>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container-footer">
+            <div>
+                Copyright 2024
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/js/tic-tac-toe/script.js"></script>
+</body>
+</html>

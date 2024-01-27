@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 24px;
+    color: rgb(0, 23, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   /* Navbar style */
+   .navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  }
+
+  .features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    padding: 0 30px 10px 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;   
+  }
+  .features-menu li:last-of-type {
+    border-bottom: none;
+  }
+  .navbar a {
+      color: white;
+      font-family: Bebas Neue;
+      text-decoration: none;
+  }
+  .dropdown {
+    padding: 10px;
+    position: relative;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 4px;
+  }
+  .burger-menu {
+    z-index: 2;
+    position: relative;  
+    cursor: pointer;
+  } 
+  .features-menu {
+    display: none;
+    background:rgba(0,0,0,0.8);
+    width: 330px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: white;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;   
+    top: -25px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  }
+
+  .links {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .links li:nth-child(2) {
+    display: none;
+  }
+
+  .main-links {
+    display: none;
+  }
+
+  .symbol {
+    display: none;
+  }
+
+/* Contenitore connect 4 */
+  .container {
+    display: grid;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+/* Schermata di inizio */
+    .header-container h1{
+      margin:0 auto 0 auto;
+    }
+
+    .header-container h3{
+      margin-top:0;
+    }
+  .start-screen {
+    background-color: rgba(209, 205, 203, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .input-container {
+    width:100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid rgb(0, 23, 50);
+  }
+  
+  .btn-start {
+    border: 2px solid rgb(0, 23, 50);
+    font-size: 24px;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-transform: uppercase;
+    padding: 4px 20px 8px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-start:hover {
+    background-color: rgb(203, 224, 221);
+  }
+
+
+/* Griglia di gioco */
+  .turn-info {
+    height: 20px;
+    padding: 10px;
+    font-size: 28px;
+  }
+
+  .grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forza4-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px); 
+    gap: 10px;
+    background-color: rgb(28, 28, 134);
+    padding: 16px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .buttons button {
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  }
+
+  .cell {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc; 
+    border-radius: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    box-shadow: inset 0 0 10px #000000;
+  }
+
+  /* Legenda */
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height:50px;
+  }
+
+  .pl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .pl1-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+  }
+
+  .pl2-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: yellow;
+  }
+
+/* Schermata di fine */
+  .end {
+    background-color:rgba(209, 205, 203, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 107vh;
+  }
+  
+  .end-h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .warning {
+    height: 30px;
+    color: red;
+    margin-bottom: 6px;
+  }
+
+/* Classe per nascondere/mostrare elementi */
+  .hidden {
+    display: none;
+  }
+
+/* Footer style */
+.page-footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.container-footer {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: Bebas Neue;
+  letter-spacing: 1.5px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 400px) {
+  .navbar {
+    height: 60px;
+  }
+  .dropdown:hover .features-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  .container {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .grid-container {
+    max-width: 360px;
+    padding: 10px;
+  }
+  .buttons {
+    gap:0;
+  }
+  .forza4-grid {
+    grid-template-columns: repeat(7, 38px);
+    grid-template-rows: repeat(6, 38px); 
+    gap:10px;
+    padding: 12px;
+    justify-content: center;
+  }
+  .page-footer {
+    height: 95px;
+  }
+  .end {
+    height: 100vh;
+  }
+}
+  /*Smaller Tablet Styles */
+  @media only screen and (min-width: 451px) and (max-width: 650px) {
+
+    .dropdown:hover .features-menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .features-menu{
+      font-size: 20px;
+    }
+
+    .footer {
+      height: 20px;
+    }
+  }
+  
+  /*Bigger Tablet Styles */
+    @media only screen and (min-width: 651px) and (max-width: 1060px) {
+    .dropdown:hover .features-menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .features-menu{
+      font-size: 20px;
+    }
+  
+    .footer {
+      height: 20px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media only screen and (min-width: 1061px) { 
+  
+    .dropdown {
+      display: none;
+    }
+  
+    .navbar {
+      width: 100%;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .symbol {
+      font-size: 24px;
+      font-family: Bebas Neue;
+      display: flex;
+      width: max-content;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+    }
+  
+    .symbol:hover{
+      cursor: pointer;
+      
+    }
+  
+    .links-container{
+      width: 40%;
+      display: flex;
+      align-items: center;
+    }
+  
+    .links li:nth-child(2) {
+      display: flex;
+      font-family: Bebas Neue;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+  
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      gap: 60px;
+    }
+    .main-links {
+      width: max-content;
+      padding: 0;
+      margin-bottom: 10px;
+      display: flex;
+    }
+    .main-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+    .main-links, .symbol {  
+      transition: transform 0.5s ease; 
+    }
+  
+    .symbol:hover, .main-links:hover{
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      transform: scale(1.09);
+    }
+
+    .footer {
+      height: 20px;
+    }
+  }

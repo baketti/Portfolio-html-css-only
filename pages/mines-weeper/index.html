@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Weeper</title>
+    <meta name="title" content="Mines Weeper" />
+    <meta name="description" content="It is mines weeper game realized by Emanuele Giovanni Bachetti in HTML,CSS e JS- January 2024." />
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet">
+    <!-- Foglio di stile -->
+    <link rel="stylesheet" href="../../assets/css/mines-weeper/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class='symbol'>
+          <div><strong>&lt; / ></strong></div>
+      </div>
+      <div class="links-container">
+          <ul class='links'>
+              <li class='dropdown'>
+                  <div class="burger-menu">
+                      <div class="burger-line"></div>
+                      <div class="burger-line"></div>
+                      <div class="burger-line"></div>
+                  </div>
+                  <ul class='features-menu'>          
+                      <li><a href='../index.html#portfolio'>Back to home</a></li>
+                  </ul>                                
+              </li>
+              <li class="main-links"><a href='../index.html#portfolio'>Back to home</a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="game-container">
+      <!-- Pannello informazioni di gioco -->
+      <div class="game-panel">
+        <h1>Mines Weeper</h1>
+
+        <!-- Punteggio -->
+        <div class="score">
+          <span class="score-label">SCORE</span>
+          <span class="score-counter">00000</span>
+        </div>
+      </div>
+
+      <!-- Tabellone di gioco -->
+      <div class="game-board">
+        <!-- Griglia generata dinamicamente tramite Javascript -->
+        <div class="grid"></div>
+
+        <!-- Schermata di fine gioco -->
+        <div class="end-game-screen hidden">
+          <h2 class="end-game-text">Game<br>Over</h2>
+          <button class="play-again">Gioca ancora</button>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container-footer">
+          <div>
+              Copyright 2024
+          </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script type="text/Javascript" src="../../assets/js/mines-weeper/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+	color: rgb(0, 23, 50);
+	font-family: 'Darker Grotesque', sans-serif;
+}
+
+/* Navbar style */
+.navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    margin-top: -70px;
+    z-index: 999;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  }
+
+  .features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    padding: 0 30px 10px 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;   
+  }
+  .features-menu li:last-of-type {
+    border-bottom: none;
+  }
+  .navbar a {
+      color: white;
+      font-family: Bebas Neue;
+      text-decoration: none;
+  }
+  .dropdown {
+    padding: 10px;
+    position: relative;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 4px;
+  }
+  .burger-menu {
+    z-index: 2;
+    position: relative;  
+    cursor: pointer;
+  } 
+  .features-menu {
+    display: none;
+    background:rgba(0,0,0,0.8);
+    width: 330px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: white;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;   
+    top: -25px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  }
+
+  .links {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .links li:nth-child(2) {
+    display: none;
+  }
+
+  .main-links {
+    display: none;
+  }
+
+  .symbol {
+    display: none;
+  }  
+
+
+/* Game style */  
+.game-container {
+	width: 444px;
+	margin: 0 auto;
+	margin-top: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+/* Game panel */
+.game-panel {
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 30px;
+}
+
+.score {
+	font-size: 20px;
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+
+.score-counter {
+	color: red;
+}
+
+/* Game board */
+.game-board {
+	position: relative;
+ 	border: 2px solid black;
+}
+
+.grid {
+	height: 440px;
+	width: 440px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.cell {
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px #000000;
+	font-size: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cell-dark {
+	background-color: rgb(203, 224, 221);
+}
+
+.cell-light {
+	background-color: rgb(216, 238, 232);
+}
+
+.cell:hover,
+.cell-clicked {
+	background-color: rgb(157, 197, 199);
+}
+
+.cell-bomb {
+	background-color: rgb(241, 117, 78);
+	background-image: url('../../images/mines-weeper/bomb.png');
+	background-size: contain;
+}
+
+.cell-clicked,
+.cell-bomb {
+	cursor: not-allowed;
+}
+
+/* End screen */
+.end-game-screen {
+	background-color: rgba(241, 117, 78, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.win {
+	background-color: rgba(78, 241, 187, 0.6);
+}
+
+.end-game-text {
+	font-size: 48px;
+	line-height: 1.2;
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 16px;
+}
+
+button {
+	border: 2px solid rgb(0, 23, 50);
+	font-size: 24px;
+	font-family: 'Darker Grotesque', sans-serif;
+	text-transform: uppercase;
+	padding: 4px 20px 8px 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(203, 224, 221);
+}
+
+.hidden {
+	display: none;
+}
+
+/* Footer style */
+.page-footer {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+  }
+  .container-footer {
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-family: Bebas Neue;
+	letter-spacing: 1.5px;
+  }
+  
+/* Mobile styles */
+@media only screen and (max-width: 500px) {
+
+	.navbar {
+		height: 60px;
+		margin-top: -70px;
+	}
+	.dropdown:hover .features-menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} 
+	h1 {
+		margin-bottom: 26px;
+	}
+	.game-container {
+		width: 100%;
+		height: 80vh;
+		padding: 10px;
+	}
+	.game-panel {
+		width: 100%;
+	}
+	.grid {
+		height: 350px;
+		width: 100%;
+	}
+	.cell {
+		width: 10%;
+		height: 10%;
+	}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.navbar {
+		margin-top: -70px;
+	}
+	.dropdown:hover .features-menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.features-menu{
+		font-size: 20px;
+	}
+	.page-footer {
+		height: 50px;
+	}
+}
+
+ /* Desktop Styles */
+ @media only screen and (min-width: 961px) {
+    .dropdown {
+      display: none;
+    }
+  
+    .navbar {
+      width: 100%;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .symbol {
+      font-size: 24px;
+      font-family: Bebas Neue;
+      display: flex;
+      width: max-content;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+    }
+  
+    .symbol:hover{
+      cursor: pointer;
+      
+    }
+  
+    .links-container{
+      width: 40%;
+      display: flex;
+      align-items: center;
+    }
+  
+    .links li:nth-child(2) {
+      display: flex;
+      font-family: Bebas Neue;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+  
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      gap: 60px;
+    }
+    .main-links {
+      width: max-content;
+      padding: 0;
+      margin-bottom: 10px;
+      display: flex;
+    }
+    .main-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+    .main-links, .symbol {  
+      transition: transform 0.5s ease; 
+    }
+  
+    .symbol:hover, .main-links:hover{
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      transform: scale(1.09);
+    }
+}
