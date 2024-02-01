@@ -6,20 +6,23 @@
     position: fixed;
     z-index: 999;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $navbar-text-color;
+    list-style: none;
     background-color: black;
     box-shadow: 0 0 10px rgba(0,0,0,0.9);
-  
+    display: flex;
+    justify-content: flex-end;
+    .main-links {
+      list-style: none;
+      display: none;
+    }
     .dropdown {
       padding: 10px;
       position: relative;      
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
-      
+      margin-left: auto;
       .burger-menu {
         z-index: 2;
         position: relative;  
@@ -32,6 +35,7 @@
           border-radius: 4px;
         }
       } 
+      
       .features-menu {
         display: none;
         background:rgba(0,0,0,0.8);
@@ -40,14 +44,17 @@
         padding-top: 60px;
         position: absolute;   
         top: -25px;
+        right: -8px;
+        align-self: flex-end;
         margin-top: 20px;
         box-shadow: 0 0 10px rgba(0,0,0,0.9);
         li {
+          width: 200px;
           list-style: none;
           border-bottom: 1px solid #FFF;
           padding: 0 30px 10px 30px;
           margin: 10px;
-          justify-content: center;
+          justify-content: center; 
           align-items: center;
           a {
               color: $navbar-text-color;
@@ -64,15 +71,7 @@
         justify-content: center;
         align-items: center;
       }
-    }  
-  .links {
-    margin-top: 15px;
-    list-style: none;
-    .main-links {
-      display: none;
     }
-  }
-
   .symbol {
     display: none;
   }

@@ -13,13 +13,13 @@
 
   ul{
      li {
-      width: 300px;
       height: min-content;
       display: flex;
       padding-top: 40px;
       list-style: none;
     } 
   }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +27,14 @@
     width: 100%;
     height: max-content;
     list-style: none;
+  }
+  
+  .link-project {
+    text-decoration: none;
+    color: inherit;
+  }
+  .link-project:visited {
+    color: inherit;
   }
 
   .project {

@@ -45,22 +45,22 @@ for (let i = 1; i <= totalCells; i++) {
 
   // # Gestiamo il click della cella
   cell.addEventListener('click', function () {
-    // ! Controllo che la cella non sia stata già cliccata
+    // Controllo che la cella non sia stata già cliccata
     if (cell.classList.contains('cell-clicked')) return;
 
     if (bombsList.includes(i)) {
-      // Se è una bomba....
+      // Se è una bomba
       cell.classList.add('cell-bomb');
       endGame(false);
     } else {
-      // Se non lo è...
+      // Se non lo è
       cell.classList.add('cell-clicked');
       const nearBombs = checkNearBombs(i);
       if(nearBombs > 0) {
         if(nearBombs == 1) cell.style.color = 'green';
         if(nearBombs == 2 || nearBombs == 3) cell.style.color = 'blue';
         if(nearBombs == 4 || nearBombs == 5) cell.style.color = 'red';
-        if(nearBombs == 6 || nearBombs == 7 || nearBombs == 8) cell.style.color = 'red';
+        if(nearBombs == 6 || nearBombs == 7 || nearBombs == 8) cell.style.color = 'black';
         cell.innerHTML = `<span>${nearBombs}</span>`;
       }
       updateScore();
