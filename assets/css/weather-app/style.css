@@ -16,88 +16,6 @@
     display: grid;
     flex-wrap: wrap;
   }
-  /* Navbar style */
-  .navbar {
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 999;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
-  }
-
-  .features-menu li {
-    list-style: none;
-    border-bottom: 1px solid #FFF;
-    padding: 0 30px 10px 30px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;   
-  }
-  .features-menu li:last-of-type {
-    border-bottom: none;
-  }
-  .navbar a {
-      color: white;
-      font-family: Bebas Neue;
-      text-decoration: none;
-  }
-    .dropdown {
-      padding: 10px;
-      position: relative;      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .burger-line {
-      width: 30px;
-      height: 3px;
-      background-color: #fff;
-      margin: 3px 0;
-      border-radius: 4px;
-    }
-    .burger-menu {
-      z-index: 2;
-      position: relative;  
-      cursor: pointer;
-    } 
-    .features-menu {
-      display: none;
-      background:rgba(0,0,0,0.8);
-      width: 330px;
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      color: white;
-      border-radius: 5px;
-      padding-top: 60px;
-      position: absolute;   
-      top: -25px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.9);
-    }
-
-  .links {
-    margin-top: 15px;
-    list-style: none;
-    padding: 0;
-  }
-
-  .links li:nth-child(2) {
-    display: none;
-  }
-
-  .main-links {
-    display: none;
-  }
-
-  .symbol {
-    display: none;
-  }
 
 /* Weather App style */  
   .main {
@@ -235,14 +153,7 @@
   }
   
   @media only screen and (max-width: 450px) {
-  
-    .dropdown:hover .features-menu{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    } 
-    
+      
     .main {
       margin: 0 auto;
       margin-top: 80px;
@@ -257,15 +168,6 @@
   /*Smaller Tablet Styles */
   @media only screen and (min-width: 451px) and (max-width: 650px) {
 
-  .dropdown:hover .features-menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .features-menu{
-    font-size: 20px;
-  }
   .main {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -278,15 +180,7 @@
 
 /*Bigger Tablet Styles */
   @media only screen and (min-width: 651px) and (max-width: 1060px) {
-  .dropdown:hover .features-menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .features-menu{
-    font-size: 20px;
-  }
+
   .main {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -300,17 +194,6 @@
 /* Desktop styles */
 @media only screen and (min-width: 1061px) { 
 
-  .dropdown {
-    display: none;
-  }
-
-  .navbar {
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-  }
-
   .symbol {
     font-size: 24px;
     font-family: Bebas Neue;
@@ -321,52 +204,6 @@
     padding-left: 20px;
   }
 
-  .symbol:hover{
-    cursor: pointer;
-    
-  }
-
-  .links-container{
-    width: 40%;
-    display: flex;
-    align-items: center;
-  }
-
-  .links li:nth-child(2) {
-    display: flex;
-    font-family: Bebas Neue;
-    font-size: 18px;
-    margin-right: 20px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    gap: 60px;
-  }
-    .main-links {
-      width: max-content;
-      padding: 0;
-      margin-bottom: 10px;
-      display: flex;
-    }
-    .main-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        letter-spacing: 1.5px;
-      }
-  .main-links, .symbol {  
-    transition: transform 0.5s ease; 
-  }
-
-  .symbol:hover, .main-links:hover{
-    cursor: pointer;
-    transition: transform 0.5s ease;
-    transform: scale(1.09);
-  }
   .main {
     margin-top: 100px;
     margin-bottom: 20px;

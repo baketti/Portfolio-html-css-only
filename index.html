@@ -9,26 +9,27 @@
         <meta name="description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://baketti.github.io/Portfolio-html-css-only/pages/" />
+        <meta property="og:url" content="https://baketti.github.io/Portfolio-html-css-only" />
         <meta property="og:title" content="Emanuele G.Bachetti" />
         <meta property="og:description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
         <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://baketti.github.io/Portfolio-html-css-only/pages/" />
+        <meta property="twitter:url" content="https://baketti.github.io/Portfolio-html-css-only" />
         <meta property="twitter:title" content="Emanuele G.Bachetti" />
         <meta property="twitter:description" content="It is the minimal design website of Emanuele Giovanni Bachetti. Here, you can see who I am and what I can do, watch my favourite web technologies and my first projects; you can read my presentation too." />
         <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
         <meta name="robots" content="index, follow">
         <!-- Meta Tags Generated with https://metatags.io -->
-        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
         <!-- Font & Style  -->
-        <link rel='stylesheet' href='../assets/css/style.css'/>
+        <link rel='stylesheet' href='./assets/css/style.css'/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;500&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/50261d5158.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/mobile_menu.js" defer></script>
     </head>
     <body>
     <div class='page'>
@@ -36,27 +37,25 @@
             <div class='symbol'>
                 <div><strong>&lt; / ></strong></div>
             </div>
-            <div class="links-container">
-                <ul class='links'>
-                    <li class='dropdown'>
-                        <div class="burger-menu">
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                        </div>
-                        <ul class='features-menu'>          
-                            <li><a href='#about-me'>About me</a></li>
-                            <li><a href='./curriculum/index.html'>My CV</a></li>
-                            <li><a href='#portfolio'>Portfolio</a></li>
-                            <li><a href='#contact-me'>Contact me</a></li>
-                        </ul>                                
-                    </li>
-                    <li class="main-links"><a href='#about-me'>About me</a></li>    
-                    <li class="main-links"><a href="./curriculum/index.html">My CV</a></li>    
-                    <li class="main-links"><a href='#portfolio'>Portfolio</a></li>
-                    <li class="main-links"><a href='#contact-me'>Contact me</a></li>
-                </ul>
-            </div>
+            <ul class='links-container'>
+                <li class='dropdown'>
+                    <div class="burger-menu">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <ul class='features-menu'>          
+                        <li><a href='#about-me'>About me</a></li>
+                        <li><a href='./pages/curriculum/index.html'>My CV</a></li>
+                        <li><a href='#portfolio'>Portfolio</a></li>
+                        <li><a href='#contact-me'>Contact me</a></li>
+                    </ul>                                
+                </li>
+                <li class="main-links"><a href='#about-me'>About me</a></li>    
+                <li class="main-links"><a href="./pages/curriculum/index.html">My CV</a></li>    
+                <li class="main-links"><a href='#portfolio'>Portfolio</a></li>
+                <li class="main-links"><a href='#contact-me'>Contact me</a></li>
+            </ul>
         </nav>
         <header class="header-container">
             <div class="header">
@@ -65,7 +64,7 @@
             </div>
             <div class='my-photo'>
                 <picture>
-                  <img src='../assets/images/me.jpeg' title='Emanuele Giovanni Bachetti`s photo' alt='Emauele Giovanni Bachetti`s photo image' class="my-image" />
+                  <img src='./assets/images/me.jpeg' title='Emanuele Giovanni Bachetti`s photo' alt='Emauele Giovanni Bachetti`s photo image' class="my-image" />
                 </picture>
             </div>
         </header>
@@ -94,24 +93,24 @@
                 part-time doing occasional activities such as waiter and gardener.
                  I love sports and healthy food. I am a patient, stubborn, dynamic, and highly motivated person.
                 I can`t wait to start!<br>
-                If you want, you can look at my resume <a id="cv-link" href="./curriculum/index.html">here</a>."</em>
+                If you want, you can look at my resume <a id="cv-link" href="./pages/curriculum/index.html">here</a>."</em>
             </p>
         </section>
         <section class="techs-container">
             <h3>My favourite technologies</h3>
             <div class="techs">
                 <ul class="techs-list"><!-- I've inserted background in line cause it wasn't work -->
-                  <li><img title="HTML5" alt="HTML5 logo image" class="tech" src="../assets/images/techs/html.png"></img></li>
-                  <li><img title="CSS3" alt="CSS3 logo image" id="css-logo" class="tech" src="../assets/images/techs/csss.png"></img></li>
-                  <li><img title="Sass" alt="Sass logo image" id="sass-logo" class="tech" src="../assets/images/techs/sass.png"></img></li>
-                  <li><img title="Javascript" alt="Javascript logo image" id="js-logo" class="tech" src="../assets/images/techs/javascript.png"></img></li>
-                  <li><img title="Typescript" alt="Typescript logo image" id="ts-logo" class="tech" src="../assets/images/techs/ts.png"></img></li>
-                  <li><img title="React" alt="React logo image" class="tech" src="../assets/images/techs/react.png"></img></li>
-                  <li><img title="Node.js" alt="Node.js logo image" id="node-logo" class="tech" src="../assets/images/techs/nod.png"></img></li>
-                  <li><img title="Next.js" alt="Next.js logo image" id="next-logo" class="tech" src="../assets/images/techs/nextjs.png"></img></li>
-                  <li><img title="SQL" alt="SQL logo image"  class="tech" src="../assets/images/techs/sql.png"></img></li>
-                  <li><img title="Mongo DB" alt="Mongo DB logo image" id="mongodb-logo" class="tech" src="../assets/images/techs/Mongodb-PNG-Image-HD.png"></img></li>
-                  <li><img title="OpenAi" alt="OpenAi logo image" id="openai-logo" class="tech" src="../assets/images/techs/openai.png"></img></li>
+                  <li><img title="HTML5" alt="HTML5 logo image" class="tech" src="./assets/images/techs/html.png"></img></li>
+                  <li><img title="CSS3" alt="CSS3 logo image" id="css-logo" class="tech" src="./assets/images/techs/csss.png"></img></li>
+                  <li><img title="Sass" alt="Sass logo image" id="sass-logo" class="tech" src="./assets/images/techs/sass.png"></img></li>
+                  <li><img title="Javascript" alt="Javascript logo image" id="js-logo" class="tech" src="./assets/images/techs/javascript.png"></img></li>
+                  <li><img title="Typescript" alt="Typescript logo image" id="ts-logo" class="tech" src="./assets/images/techs/ts.png"></img></li>
+                  <li><img title="React" alt="React logo image" class="tech" src="./assets/images/techs/react.png"></img></li>
+                  <li><img title="Node.js" alt="Node.js logo image" id="node-logo" class="tech" src="./assets/images/techs/nod.png"></img></li>
+                  <li><img title="Next.js" alt="Next.js logo image" id="next-logo" class="tech" src="./assets/images/techs/nextjs.png"></img></li>
+                  <li><img title="SQL" alt="SQL logo image"  class="tech" src="./assets/images/techs/sql.png"></img></li>
+                  <li><img title="Mongo DB" alt="Mongo DB logo image" id="mongodb-logo" class="tech" src="./assets/images/techs/Mongodb-PNG-Image-HD.png"></img></li>
+                  <li><img title="OpenAi" alt="OpenAi logo image" id="openai-logo" class="tech" src="./assets/images/techs/openai.png"></img></li>
                 </ul>
             </div>
         </section>
@@ -119,20 +118,20 @@
         <section class="portfolio">
             <h3>My portfolio</h3>
             <ul class="projects">
-                <li><a href="./tic-tac-toe/index.html" class="link-project"><figure><figcaption>Tic Tac Toe</figcaption>
-                    <img class="project" id="tris" src="../assets/images/projects/TicTacToe.jpg" title="Tic Tac Toe" alt="Tic Tac Toe image"/>
+                <li><a href="./pages/tic-tac-toe/index.html" class="link-project"><figure><figcaption>Tic Tac Toe</figcaption>
+                    <img class="project" id="tris" src="./assets/images/projects/TicTacToe.jpg" title="Tic Tac Toe" alt="Tic Tac Toe image"/>
                 </figure></a></li>                
-                <li><a href="./connect-4/index.html" class="link-project"><figure><figcaption>Connect 4</figcaption>
-                    <img class="project" src="../assets/images/projects/connect-4-multiplayer.webp" title="Connect 4" alt="Connect 4 image"/>
+                <li><a href="./pages/connect-4/index.html" class="link-project"><figure><figcaption>Connect 4</figcaption>
+                    <img class="project" src="./assets/images/projects/connect-4-multiplayer.webp" title="Connect 4" alt="Connect 4 image"/>
                 </figure></a></li>                
-                <li><a href="./mines-weeper/index.html" class="link-project"><figure><figcaption>Mines weeper</figcaption>
-                    <img class="project" src="../assets/images/projects/campo.jpg" title="Mines Weeper" alt="Mines Weeper image"/>
+                <li><a href="./pages/mines-weeper/index.html" class="link-project"><figure><figcaption>Mines weeper</figcaption>
+                    <img class="project" src="./assets/images/projects/campo.jpg" title="Mines Weeper" alt="Mines Weeper image"/>
                 </figure></a></li>                
-                <li><a href="./weather-app/index.html" class="link-project"><figure><figcaption>Weather App</figcaption>
-                    <img class="project" src="../assets/images/projects/weather-app.png" title="Simple weather app" alt="Weather app image"/>
+                <li><a href="./pages/weather-app/index.html" class="link-project"><figure><figcaption>Weather App</figcaption>
+                    <img class="project" src="./assets/images/projects/weather-app.png" title="Simple weather app" alt="Weather app image"/>
                 </figure></a></li>                
                 <li><a href="https://baketti.github.io/to-do-list-app/" class="link-project" target="_blank" rel="noopener"><figure><figcaption>To do list App</figcaption>
-                    <img class="project" src="../assets/images/projects/to-do.jpg" title="Simple to do list app" alt="To do list image"/>
+                    <img class="project" src="./assets/images/projects/to-do.jpg" title="Simple to do list app" alt="To do list image"/>
                 </figure></a></li>
             </ul>
         </section>
