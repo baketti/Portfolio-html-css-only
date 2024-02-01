@@ -17,12 +17,12 @@ function toggleMenu() {
     }
 }
 
-burgerMenu.addEventListener('click', function(event) {
+burgerMenu.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleMenu();
 });
 
-window.addEventListener('click', function(event) {
+window.addEventListener('click', () => {
     if (isMenuOpen) {
         menu.style.display = 'none';
         isMenuOpen = false;
