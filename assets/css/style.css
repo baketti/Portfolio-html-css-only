@@ -522,6 +522,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
   }
   .contact {
     display: flex;
